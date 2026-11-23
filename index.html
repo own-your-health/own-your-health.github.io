@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Open-source tools that copy a household's own health records into the household's own Google Drive, and a web app that reads them there.">
+<title>Own Your Health</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<main>
+<h1>Own Your Health</h1>
+<p class="lead">Open-source tools that copy a household's own health records out of patient portals, health plans and labs into the household's own Google Drive, and a web app that reads them there.</p>
+
+<p>This is an independent open-source project. It has no server, no accounts and no ads, and it is not affiliated with or endorsed by Google, Epic, or any provider, health plan or lab named below. All of its code is public at <a href="https://github.com/own-your-health">github.com/own-your-health</a>.</p>
+
+<h2>The app</h2>
+<p><a href="/app/">own-your-health.github.io/app</a> shows a household's records in the browser: results over time, medicines, visits, claims and costs. It reads them from a folder in the household's own Google Drive, using a Google sign-in the household sets up with its own Google Cloud project. Nothing is sent to this site or to anyone else. Its <a href="/app/privacy.html">privacy policy</a> says exactly what it reads.</p>
+
+<h2>The command-line tools</h2>
+<p>Each tool runs on the household's own Mac or Linux computer and downloads that person's own records, through the provider's published patient-access API where one exists.</p>
+<ul>
+<li><a href="https://github.com/own-your-health/medrec-cli">medrec</a>: files every record into the household's Drive folder.</li>
+<li><a href="/mychart-cli/">mychart</a>: Epic MyChart organizations.</li>
+<li><a href="https://github.com/own-your-health/athena-cli">athena</a>: athenahealth practices.</li>
+<li><a href="/modmed-cli/">modmed</a>: ModMed practices.</li>
+<li><a href="https://github.com/own-your-health/kaiser-cli">kp</a>: Kaiser Permanente health-plan claims.</li>
+<li>Health plans, pharmacies, labs and bills: <a href="https://github.com/own-your-health/uhc-cli">uhc</a>, <a href="https://github.com/own-your-health/caremark-cli">caremark</a>, <a href="https://github.com/own-your-health/labcorp-cli">labcorp</a>, <a href="https://github.com/own-your-health/oneblood-cli">oneblood</a>, <a href="https://github.com/own-your-health/icanotes-cli">icanotes</a>, <a href="https://github.com/own-your-health/flywire-cli">flywire</a>, <a href="https://github.com/own-your-health/peryourhealth-cli">peryourhealth</a> and <a href="https://github.com/own-your-health">more</a>.</li>
+</ul>
+
+<h2>The sign-in pages on this site</h2>
+<p>Two pages here, <a href="/mychart-cli/callback">mychart-cli/callback</a> and <a href="/modmed-cli/callback">modmed-cli/callback</a>, are the last step of a sign-in that a command-line tool starts on the person's own computer. The provider sends the browser back to that page, and the page hands the result to the tool waiting on that same computer (127.0.0.1). They never ask for a password and send nothing to this site.</p>
+</main>
+</body>
+</html>
