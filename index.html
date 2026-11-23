@@ -29,6 +29,9 @@
 <li>Health plans, pharmacies, labs and bills: <a href="https://github.com/own-your-health/uhc-cli">uhc</a>, <a href="https://github.com/own-your-health/caremark-cli">caremark</a>, <a href="https://github.com/own-your-health/labcorp-cli">labcorp</a>, <a href="https://github.com/own-your-health/oneblood-cli">oneblood</a>, <a href="https://github.com/own-your-health/icanotes-cli">icanotes</a>, <a href="https://github.com/own-your-health/flywire-cli">flywire</a>, <a href="https://github.com/own-your-health/peryourhealth-cli">peryourhealth</a> and <a href="https://github.com/own-your-health">more</a>.</li>
 </ul>
 
+<h2>Ask an assistant</h2>
+<p><a href="https://github.com/own-your-health/connector">connector</a> lets Claude, ChatGPT, Gemini and other assistants that take remote MCP connectors answer questions from the records, on the web and on the phone, with no computer left on. Each household deploys it into its own Cloudflare account, on the free plan. It reads the Drive folder with the household's own Google sign-in for each question, admits only the household's Google accounts, and stores nothing it reads.</p>
+
 <h2>The sign-in pages on this site</h2>
 <p>Two pages here, <a href="/mychart-cli/callback">mychart-cli/callback</a> and <a href="/modmed-cli/callback">modmed-cli/callback</a>, are the last step of a sign-in that a command-line tool starts on the person's own computer. The provider sends the browser back to that page, and the page hands the result to the tool waiting on that same computer (127.0.0.1). They never ask for a password and send nothing to this site.</p>
 </main>
