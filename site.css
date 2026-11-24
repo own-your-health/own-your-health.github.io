@@ -9,3 +9,4 @@ p, li { color: var(--fg); }
 a { color: var(--link); }
 ul { padding-left: 1.25rem; }
 li { margin: .3rem 0; }
+footer p { margin-top: 2.5rem; color: var(--muted); font-size: .9rem; }
